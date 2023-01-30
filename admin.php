@@ -8,14 +8,20 @@
  <body>
 <?php
 include 'includes/header.inc.php';
+if (isset($_SESSION["is_admin"])){
+    if ($_SESSION["is_admin"] ==1){
 
 
-?>
-<form id="bookForm" method="POST" action="includes/admin.inc.php" enctype="multipart/form-data">
+echo '<form id="bookForm" method="POST" action="includes/admin.inc.php" enctype="multipart/form-data">
     <h1>Add a new book</h1>
     <input required class="bookInput" name="Author" placeholder="Enter Author">
     <input required class="bookInput" name="Title" placeholder="Enter Title">
     <input required class="bookInput" sname="Publisher" placeholder="Enter Publisher">
     <input required class="bookInput" type="file" name="bookToUpload" >
     <input required class="bookInput" type="submit" value="Upload Book" name="submitBook">
-</form>
+</form>';
+    }
+    }
+
+
+?>
