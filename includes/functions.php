@@ -84,6 +84,8 @@ function isAuthorized ($connection,$username,$password){
             $_SESSION["username"] = $row["username"];
             $_SESSION["email"] = $row["email"];
             $_SESSION["account_id"] = $row["account_id"];
+            $_SESSION["is_admin"] = $row["is_admin"];
+
             return true;   
         }
     }

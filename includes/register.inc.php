@@ -29,7 +29,7 @@ if (isset($_POST["submit"]))
         exit();
     }*/
     createUser($connection,$username,$password,$email);
-}
+} 
 else
 {
     header("Location: ../register.php");

@@ -1,5 +1,11 @@
 <?php
 session_start();
+if (isset($_SESSION["is_admin"])){
+    if ($_SESSION["is_admin"] ==1){
+
+    
+
+
     if(isset($_POST["submitBook"])){ 
         include 'db.inc.php';
         include 'functions.php';
@@ -20,5 +26,7 @@ session_start();
 } else {
     header("location: ../admin.php");
 
+}
+    }
 }
 ?>

@@ -6,7 +6,7 @@
   <title>Main Page</title>
  </head>
  <body>
- <?php
+ <?php 
         include 'includes/header.inc.php';
   ?>
     <?php
