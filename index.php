@@ -3,11 +3,11 @@
  <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Main Page</title>
+  <title>Main sssPage</title>
  </head>
  <body>
  <?php
-        include 'includes/header.inc.php';
+        include 'includes/header.inc.php'; 
   ?>
     <?php
    /* session_start();
@@ -18,6 +18,6 @@
                ';
       }
     */?>
-  
+  <p> Hello.</p>
  </body>
 </html>
